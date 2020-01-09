@@ -1,10 +1,15 @@
 
+// var quoziente = i%3;
+// var messaggio = i;
+// var quoziente2 = i%5;
+// var quoziente3 = i%15;
+
 // for (var i = 1; i < 101; i++) {
 //
- // var quoziente = i%3;
- // var messaggio = i;
- // var quoziente2 = i%5;
- // var quoziente3 = i%15;
+//  var quoziente = i%3;
+//  var messaggio = i;
+//  var quoziente2 = i%5;
+//  var quoziente3 = i%15;
 //
 // if (quoziente3==0) {
 //   messaggio = 'FizzBuzz';
@@ -17,22 +22,25 @@
 
 
 var i = 1;
-while (i < 101){
-  var quoziente = i%3;
-  var messaggio = i;
-  var quoziente2 = i%5;
-  var quoziente3 = i%15;
-  console.log(i);
-  if (quoziente3==0){
+while (i <= 100){
+  quoziente = i%3;
+  quoziente2 = i%5;
+  quoziente3 = i%15;
+  if (quoziente3 == 0){
     messaggio = 'FizzBuzz';
-  }else if (quoziente2==0) {
+    console.log('FizzBuzz');
+  }else if (quoziente2 == 0) {
     messaggio = 'Buzz';
-  }else if (quoziente==0)
-  messaggio='Fizz';
-  console.log(messaggio);
-  i = i + messaggio;
+    console.log('Buzz');
+  }else if (quoziente == 0){
+    messaggio='Fizz';
+    console.log('Fizz');
+  }
+  else {
+    messaggio = i;
+    console.log(messaggio);
+  }
   i++;
-
 
 
 }

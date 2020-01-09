@@ -1,9 +1,17 @@
 
-// var divisione = 100 / 3;
-// console.log(divisione);
 for (var i = 1; i < 101; i++) {
-console.log(i);
-var contenuto = document.getElementById('lista_numeri').innerHTML;
-document.getElementById('lista_numeri').innerHTML = contenuto + '<li>' + i + '</li>';
-console.log(document.getElementById('lista_numeri').innerHTML);
+
+var quoziente = i%3;
+var messaggio = i
+var quoziente2 = i%5;
+var quoziente3 = i%15;
+
+if (quoziente3==0) {
+  messaggio = 'FizzBuzz';
+} else if (quoziente2==0) {
+ messaggio = 'Buzz';
+} else if (quoziente==0)
+ messaggio = 'Fizz';
+console.log(messaggio);
+
 }

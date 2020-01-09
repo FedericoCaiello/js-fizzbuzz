@@ -1,8 +1,4 @@
 
-// var quoziente = i%3;
-// var messaggio = i;
-// var quoziente2 = i%5;
-// var quoziente3 = i%15;
 
 // for (var i = 1; i < 101; i++) {
 //
